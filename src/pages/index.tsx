@@ -1,10 +1,11 @@
 import Head from 'next/head'
-
 import { Inter } from 'next/font/google'
+//
+import style from '../styles/indexStyle.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <Head>
@@ -13,6 +14,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={style.main}>
+        <header className={style.titleContainer}>
+          <h1 className={style.title}>심리테스트 제목</h1>
+          <div className={style.textBox}>
+            <p>나의 여행 스타일을 알아보고</p>
+            <p>여행지를 추천받으세요!</p>
+          </div>
+        </header>
+        <button>테스트 시작하기</button>
+      </div>
     </>
   )
 }
