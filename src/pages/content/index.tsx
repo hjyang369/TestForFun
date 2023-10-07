@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import OnlyContent from './OnlyContent'
 //
 import style from './contents.module.scss'
