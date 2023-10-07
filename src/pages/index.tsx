@@ -5,7 +5,7 @@ import style from '../styles/indexStyle.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Main() {
+const Main = () => {
   return (
     <>
       <Head>
@@ -27,3 +27,5 @@ export default function Main() {
     </>
   )
 }
+
+export default Main

@@ -1,0 +1,25 @@
+@import '../../styles/variable.scss';
+.content {
+  @include flexCenter(150px, column);
+  text-align: center;
+  padding: 50px;
+
+  .titleContainer {
+    @include flexColumn(15px, column);
+    color: $primary-color;
+    font-size: 1.7rem;
+  }
+  .btns {
+    @include flexColumn(20px, row);
+
+    button {
+      @include btnHoverColor;
+      padding: 20px;
+      font-size: 1.2rem;
+
+      &:hover {
+        @include btnColor;
+      }
+    }
+  }
+}

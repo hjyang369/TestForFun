@@ -1,0 +1,15 @@
+@import '../../styles/variable.scss';
+
+.contents {
+  .titleContainer {
+    color: $primary-color;
+  }
+  button {
+    @include btnHoverColor;
+    padding: 20px;
+    font-size: 1.2rem;
+    &:hover {
+      @include btnColor;
+    }
+  }
+}

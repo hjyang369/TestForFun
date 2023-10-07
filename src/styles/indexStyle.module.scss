@@ -1,24 +1,20 @@
 @import './variable.scss';
 
 .main {
-  @include flexCenter;
-  flex-direction: column;
-  gap: 200px;
+  @include flexCenter(200px, column);
   text-align: center;
   height: 100vh;
+
   .titleContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flexColumn(30px, column);
 
     .title {
       font-size: 4rem;
       color: $primary-color;
     }
+
     .textBox {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      @include flexColumn(10px, column);
     }
   }
 
@@ -26,10 +22,9 @@
     @include btnColor;
     padding: 20px;
     font-size: 1.2rem;
+
     &:hover {
       @include btnHoverColor;
     }
   }
 }
-
-// , font-size를 62.5%로 설정하면 1rem당 10px

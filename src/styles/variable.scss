@@ -1,7 +1,21 @@
 $primary-color: #fead00;
 $main-color: rgb(253, 246, 237);
 
-@mixin flexCenter {
+@mixin flexCenter($gap, $direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin flexColumn($gap, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin btnColor {
   display: flex;
   justify-content: center;
   align-items: center;
