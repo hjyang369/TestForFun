@@ -1,0 +1,22 @@
+$primary-color: #fead00;
+$main-color: rgb(253, 246, 237);
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin btnColor {
+  color: $primary-color;
+  background-color: $main-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+}
+
+@mixin btnHoverColor {
+  color: $main-color;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+}
